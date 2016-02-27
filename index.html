@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+  <html ng-app="gameFinder">
+    <head>
+      <title>Game Search</title>
+      <link rel="stylesheet" href="css/style.css"></link>
+    </head>
+    <body ng-controller="gameCtrl">
+      <div class="container">
+        <div class="navbar">
+          <div ng-click="getGameList()" class="game-nav"><a ui-sref="gameList">Recent Games</a></div>
+          <a ui-sref="home"><div  class="home-nav">Home</div></a>
+          <a ui-sref="videoList"><div class="video-nav" ng-click="getVideoList()">Recent Videos</div></a>
+          <a ui-sref="reviewList"><div class="review-nav" ng-click="getReviewList()">Recent Reviews</div></a>
+          <form>
+            <input class="searchbar" type="text" placeholder="Search for games!" ng-model="search"></input>
+            <button type="submit" class="submit-button" ng-click="getSearchList()">SUBMIT</button>
+          </form>
+        </div>
+        <div class="content">
+          <ui-view></ui-view>
+        </div>
+      </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/gameCtrl.js"></script>
+    <script src="js/homeCtrl.js"></script>
+    <script src="js/gameService.js"></script>
+  </html>

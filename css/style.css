@@ -1,0 +1,256 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+body {
+  background-image: url('https://images-eds-ssl.xboxlive.com/image?url=8Oaj9Ryq1G1_p3lLnXlsaZgGzAie6Mnu24_PawYuDYIoH77pJ.X5Z.MqQPibUVTcY84HZYe7J85hiX2C8C.KBTEnCTaSTokgco6ZgmbQvlTkSmgjceZT7E_7B59KhAQ9vubQ7eJlZX7ELELMbEOk7Et9qrDNxAspIvSgBfrWpl8TwGKQQ4Q1dolEVi605WXrun1wOTfhhmuguUNhR6XyfqzzeQTF_SAGsckFSR2hTEw-&format=jpg');
+  z-index: -1;
+  background-repeat: repeat;
+  background-size: cover;
+
+}
+.container {
+  width: 85%;
+  height: 90vh;
+  z-index: 1;
+  background-color: rgba(75,75,75,0.5);
+  margin: auto;
+  border-radius:10px;
+  padding: 15px;
+  position: relative;
+
+}
+.navbar {
+  border-radius: 30px;
+  position: absolute;
+  width: 25%;
+  left: 10px;
+  top: 10px;
+  height: 90vh;
+  background-color: rgba(0, 0, 0,0.5);
+  display: inline-block;
+  border: black solid 2px
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+a:link {
+  color: #fff;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  text-decoration: none;
+}
+a:visited {
+  color: #fff;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  text-decoration: none;
+}
+.content {
+  height: 90vh;
+  width: 71.5%;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  background-color: rgba(0,0,0,.5);
+  display: inline-block;
+  border-radius: 15px;
+  overflow-y: auto;
+  color: #fff;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: black solid 2px;
+  font-family: "Oswald", sans-serif;
+}
+.search-results {
+  font-family: "Oswald", sans-serif;
+}
+.content-text: {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  border-top: 3px white solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.submit-button {
+  position: absolute;
+  top: 7%;
+  left: 10%;
+  width: 80%;
+  background: #000;
+  background-image: -webkit-linear-gradient(top, #000, #fff);
+  background-image: -moz-linear-gradient(top, #000, #fff);
+  background-image: -ms-linear-gradient(top, #000, #fff);
+  background-image: -o-linear-gradient(top, #000, #fff);
+  background-image: linear-gradient(to bottom, #000, #fff);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 1px;
+  font-family: Arial;
+  color: #fff;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  font-size: 17px;
+  padding: 7.5px 15px 7.5px 15px;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+}
+.submit-button:hover {
+  background: #fff;
+  background-image: -webkit-linear-gradient(top, #fff, #000);
+  background-image: -moz-linear-gradient(top, #fff, #000);
+  background-image: -ms-linear-gradient(top, #fff, #000);
+  background-image: -o-linear-gradient(top, #fff, #000);
+  background-image: linear-gradient(to bottom, #fff, #000);
+  text-decoration: none;
+  color: #000;
+  text-shadow: 1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff;
+}
+.submit-button:focus {
+  outline: none;
+}
+.game-nav {
+  position: absolute;
+  top: 30%;
+  background: rgba(100,100,100,.5);
+  height: 12.5vh;
+  width: 100%;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  border: black solid 1px;
+}
+.game-nav:hover {
+  background: rgba(175,175,175,.5);
+}
+.home-nav {
+  position: absolute;
+  top: 15%;
+  background: rgba(100,100,100,.5);
+  height: 12.5vh;
+  width: 100%;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  border: black solid 1px;
+}
+.home-nav:hover {
+  background: rgba(175,175,175,.5);
+}
+.video-nav {
+  position: absolute;
+  top: 45%;
+  background: rgba(100,100,100,.5);
+  height: 12.5vh;
+  width: 100%;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  border: black solid 1px;
+}
+.video-nav:hover {
+  background: rgba(175,175,175,.5);
+}
+.review-nav {
+  position: absolute;
+  top: 60%;
+  background: rgba(100,100,100,.5);
+  height: 12.5vh;
+  width: 100%;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  border: black solid 1px;
+}
+.review-nav:hover {
+  background: rgba(175,175,175,.5);
+}
+
+.searchbar {
+  background: url(../img/keyIcon.png) 12px 11px no-repeat, linear-gradient(to bottom, #f7f7f8 0%,#ffffff 100%);
+  border-radius: 3px;
+  border: none;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2) inset, 0 -1px 0 rgba(0,0,0,0.05) inset;
+  transition: all 0.2s linear;
+  font-family: "Oswald", sans-serif;
+  font-size: 13px;
+  position: absolute;
+  top: 10px;
+  color: #000000;
+  margin: auto;
+  left: 10%;
+  height: 25px;
+  width: 70%;
+  padding-left: 30px;
+}
+.recentGamesFilter {
+  background: url(../img/keyIcon.png) 12px 11px no-repeat, linear-gradient(to bottom, #f7f7f8 0%,#ffffff 100%);
+  border-radius: 3px;
+  border: none;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2) inset, 0 -1px 0 rgba(0,0,0,0.05) inset;
+  transition: all 0.2s linear;
+  font-family: "Oswald", sans-serif;
+  font-size: 13px;
+  position: absolute;
+  top: 10px;
+  color: #000000;
+  margin: auto;
+  left: 30%%;
+  height: 25px;
+  width: 70%;
+  padding-left: 30px
+
+}
+::-webkit-input-placeholder {
+  color: #000;
+  text-shadow: 1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff;
+}
+:-moz-placeholder {
+  color: #000;
+  text-shadow: 1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff;
+}
+::-moz-placeholder {
+  color: #000;
+  text-shadow: 1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff;
+}
+:-ms-input-placeholder {
+  color: #000;
+  text-shadow: 1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff;
+}
+:placeholder-shown {
+  color: #000;
+  text-shadow: 1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff;
+}
