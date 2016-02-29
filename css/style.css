@@ -5,7 +5,14 @@ body {
   z-index: -1;
   background-repeat: repeat;
   background-size: cover;
-
+}
+.underlined {
+  text-decoration: underline;
+}
+.time-header {
+  color: #fff;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  font-family: "Oswald", sans-serif;
 }
 .container {
   width: 85%;
@@ -16,7 +23,6 @@ body {
   border-radius:10px;
   padding: 15px;
   position: relative;
-
 }
 .navbar {
   border-radius: 30px;
@@ -27,7 +33,8 @@ body {
   height: 90vh;
   background-color: rgba(0, 0, 0,0.5);
   display: inline-block;
-  border: black solid 2px
+  border: black solid 2px;
+  margin-right: 10px;
 }
 ::-webkit-scrollbar {
     width: 12px;
@@ -120,7 +127,7 @@ a:visited {
 }
 .game-nav {
   position: absolute;
-  top: 30%;
+  top: 31%;
   background: rgba(100,100,100,.5);
   height: 12.5vh;
   width: 100%;
@@ -160,7 +167,7 @@ a:visited {
 }
 .video-nav {
   position: absolute;
-  top: 45%;
+  top: 47%;
   background: rgba(100,100,100,.5);
   height: 12.5vh;
   width: 100%;
@@ -180,7 +187,7 @@ a:visited {
 }
 .review-nav {
   position: absolute;
-  top: 60%;
+  top: 63%;
   background: rgba(100,100,100,.5);
   height: 12.5vh;
   width: 100%;
@@ -198,7 +205,26 @@ a:visited {
 .review-nav:hover {
   background: rgba(175,175,175,.5);
 }
-
+.promo-nav {
+  position: absolute;
+  top: 79%;
+  background: rgba(100,100,100,.5);
+  height: 12.5vh;
+  width: 100%;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  border: black solid 1px;
+}
+.promo-nav:hover {
+  background: rgba(175,175,175,.5);
+}
 .searchbar {
   background: url(../img/keyIcon.png) 12px 11px no-repeat, linear-gradient(to bottom, #f7f7f8 0%,#ffffff 100%);
   border-radius: 3px;
@@ -253,4 +279,26 @@ a:visited {
 :placeholder-shown {
   color: #000;
   text-shadow: 1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff;
+}
+.home-sheet {
+  text-align: center;
+}
+@media (min-width: 600px) {
+  .home-body {
+    font-size: 30px;
+  }
+  .home-title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 800px) {
+  .home-body {
+    font-size: 150%;
+  }
+  .home-title {
+    font-size: 150%;
+  }
+  .container {
+    margin-left: 20px;
+  }
 }

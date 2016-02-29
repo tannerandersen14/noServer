@@ -5,12 +5,14 @@
       <link rel="stylesheet" href="css/style.css"></link>
     </head>
     <body ng-controller="gameCtrl">
+      <time-directive time="time"></time-directive>
       <div class="container">
         <div class="navbar">
-          <div ng-click="getGameList()" class="game-nav"><a ui-sref="gameList">Recent Games</a></div>
-          <a ui-sref="home"><div  class="home-nav">Home</div></a>
-          <a ui-sref="videoList"><div class="video-nav" ng-click="getVideoList()">Recent Videos</div></a>
-          <a ui-sref="reviewList"><div class="review-nav" ng-click="getReviewList()">Recent Reviews</div></a>
+          <div ng-click="getGameList()" class="game-nav"><a ui-sref="gameList"><css-directive>Recent Games</css-directive></a></div>
+          <a ui-sref="home"><div  class="home-nav"><css-directive>Home</css-directive></div></a>
+          <a ui-sref="videoList"><div class="video-nav" ng-click="getVideoList()"><css-directive>Recent Videos</css-directive></div></a>
+          <a ui-sref="reviewList"><div class="review-nav" ng-click="getReviewList()"><css-directive>Recent Reviews</css-directive></div></a>
+          <a ui-sref="promoList"><div class="promo-nav" ng-click="getPromoList()"><css-directive>Recent Promos</css-directive></div></a>
           <form>
             <input class="searchbar" type="text" placeholder="Search for games!" ng-model="search"></input>
             <button type="submit" class="submit-button" ng-click="getSearchList()">SUBMIT</button>
@@ -27,4 +29,6 @@
     <script src="js/gameCtrl.js"></script>
     <script src="js/homeCtrl.js"></script>
     <script src="js/gameService.js"></script>
+    <script src="js/timeDirective.js"></script>
+    <script src="js/cssDirective.js"></script>
   </html>

@@ -1,4 +1,4 @@
-angular.module('gameFinder').controller('gameCtrl', function($scope, $state, gameService) {
+angular.module('gameFinder').controller('gameCtrl', function($scope, $state, $interval, gameService) {
   $scope.getGameList = function() {
     gameService.getGameList().then(function(response) {
       $scope.gameList = response.data.results;
@@ -6,7 +6,7 @@ angular.module('gameFinder').controller('gameCtrl', function($scope, $state, gam
   }
   $scope.getSearchList = function() {
     gameService.getSearchList($scope.search).then(function(response) {
-      $scope.searchList = response.data.results;
+      $scope.searchList = response.data.results
       $state.go('searchResults')
     })
   }
@@ -20,5 +20,13 @@ angular.module('gameFinder').controller('gameCtrl', function($scope, $state, gam
       $scope.reviewList = response.data.results;
     })
   }
-
+  $scope.getPromoList = function() {
+    gameService.getPromoList().then(function(response) {
+      $scope.promoList = response.data.results;
+      console.log($scope.promoList)
+    })
+  }
+  $interval(function() {
+    $scope.time = new Date().toLocaleTimeString();
+  }, 1000)
 })

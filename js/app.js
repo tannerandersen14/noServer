@@ -29,6 +29,11 @@ angular.module('gameFinder').config(function($stateProvider, $urlRouterProvider)
       templateUrl: 'templates/reviewList.html',
       controller: 'gameCtrl'
     })
+    .state('promoList', {
+      url: '/promolist',
+      templateUrl: 'templates/promoList.html',
+      controller: 'gameCtrl'
+    })
     $urlRouterProvider.otherwise('/')
 
 });

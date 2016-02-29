@@ -1,0 +1,11 @@
+<div>
+  <input type="text" class="recentGamesfilter" ng-model="recentPromosFilter" placeholder="Filter By Name" ng-style="{'background': 'url(../img/keyIcon.png)', 'border-radius': '10px', 'box-shadow': '0 1px 2px rgba(0,0,0,0.2) inset, 0 -1px 0 rgba(0,0,0,0.05) inset', 'transition': 'all 0.2s linear', 'font-size': '13px', 'color': '#fcfcfc', 'padding-left': '5px'}">
+  <div class="content-text" ng-repeat="promo in promoList | filter: {name: recentPromosFilter}">
+    <h1 ng-style="{'border-top': 'solid white 3px'}"><a href="{{promo.link}}">{{promo.name}}</a></h1>
+    <p>{{promo.date_added.slice(0, 10)}}</p>
+    <p>{{promo.deck}}<p>
+    {{promo.user}}
+    <br />
+    <img  ng-src="{{game.image.icon_url}}">
+  </div>
+</div>
