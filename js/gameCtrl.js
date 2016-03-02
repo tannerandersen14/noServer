@@ -8,6 +8,7 @@ angular.module('gameFinder').controller('gameCtrl', function($scope, $state, $in
     gameService.getSearchList($scope.search).then(function(response) {
       $scope.searchList = response.data.results
       $state.go('searchResults')
+      $scope.search = '';
     })
   }
   $scope.getVideoList = function() {
